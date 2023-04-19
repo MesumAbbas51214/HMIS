@@ -1,0 +1,658 @@
+﻿
+@{
+    ViewData["Title"] = "Register";
+}
+
+
+<div class="content-wrapper" style="min-height: 1345.31px;">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>Registeration</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Patient</a></li>
+                        <li class="breadcrumb-item active">Registeration Entry Screen</li>
+                    </ol>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <!-- left column -->
+                <div class="col-md-12">
+                    <!-- jquery validation -->
+                    <div class="card card-primary">
+                        <div class="card-header">
+                            <h3 class="card-title">Registration </h3>
+                        </div>
+
+                        <div class="card-body">
+
+                            <form role="form">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <!-- text input -->
+                                        <div class="form-group">
+                                            <label for="RegNo">Registration No</label>
+                                            <input type="text" name="RegNo" class="form-control" id="RegNo" placeholder="Enter Reg No">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label class="form-label">Complete Name</label>
+                                            <input type="text" class="form-control input-group" placeholder="Enter Complete Name" required="" id="PName" />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label class="form-label">Nic No</label>
+                                            <input type="text" class="form-control input-group" placeholder="Enter Nic No" required="" id="NicNo" />
+                                        </div>
+                                    </div>                                 
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <label class="form-label" for="Company" name="Company">Relation<span class="text-danger">*</span></label>
+                                        <select class="form-control">
+                                            <option>D/O</option>
+                                            <option>F/O</option>
+                                            <option>M/O</option>
+                                            <option>S/O</option>
+                                        </select>
+                                    </div>
+
+
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <div class="form-group">
+                                                <label class="form-label"> Name</label>
+                                                <input type="text" class="form-control input-group" placeholder="Enter Complete Name" required="" id="PName" />
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <div class="form-group">
+                                                <label class="form-label">Registration Date Time</label>
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+                                                    </div>
+                                                    <input type="text" id="RegDateTime" class="form-control" data-inputmask-alias="datetime" data-inputmask-inputformat="mm/dd/yyyy" data-mask="" im-insert="false">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                        <!-- /.card -->
+                    </div>
+
+                </div>
+                <!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </div>
+    </section>
+    <!-- /.content -->
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- left column -->
+                <div class="col-md-12">
+                    <!-- jquery validation -->
+                    <div class="card card-primary">
+                        <div class="card-header">
+                            <h3 class="card-title">Patient Category </h3>
+                        </div>
+                        <!-- /.card-header -->
+                        <!-- form start -->
+                        <div class="card-body">
+                            <form id="quickForm" novalidate="novalidate">
+                                <div class="row">
+                                    <div class="col-sm-4 ">
+                                        <div class="form-group">
+                                            <label class="form-label" for="Category" name="Category">Category<span class="text-danger">*</span></label>
+                                            <select class="form-control">
+                                                <option>option 1</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 ">
+                                        <div class="form-group">
+                                            <label class="form-label" for="Company" name="Company">Company<span class="text-danger">*</span></label>
+                                            <select class="form-control">
+                                                <option>option 1</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 ">
+                                        <div class="form-group">
+                                            <label class="form-label" for="Consultant" name="Consultant">Consultant<span class="text-danger">*</span></label>
+                                            <select class="form-control">
+                                                <option>option 1</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <!-- /.card-body -->
+
+                            </form>
+                        </div>
+
+                    </div>
+                    <!-- /.card -->
+                </div>
+                <!--/.col (left) -->
+                <!-- right column -->
+                <!--/.col (right) -->
+            </div>
+            <!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </section>
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- left column -->
+                <div class="col-md-12">
+                    <!-- jquery validation -->
+                    <div class="card card-primary">
+                        <div class="card-header">
+                            <h3 class="card-title">Patient Details </h3>
+                        </div>
+                        <!-- /.card-header -->
+                        <!-- form start -->
+                        <div class="card-body">
+                            <form id="quickForm" novalidate="novalidate">
+                                <div class="row">
+                                    <div class="col-md-4 ">
+                                        <div class=" form-group  hidden">
+                                            <label class="form-label">Address<span class="text-danger">*</span></label>
+                                            <textarea class="form-control" id="Address" name="Address"></textarea>
+                                            <div class="invalid-feedback">
+                                                Address Required.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 ">
+                                        <div class="form-group">
+                                            <label class="form-label" for="Country" name="Country">Country<span class="text-danger">*</span></label>
+                                            <select class="form-control">
+                                                <option>option 1</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 ">
+                                        <div class="form-group">
+                                            <label class="form-label" for="Gender" name="Gender">Gender<span class="text-danger">*</span></label>
+                                            <select class="form-control">
+                                                <option>option 1</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+
+                                    <div class="col-md-4 ">
+                                        <div class="form-group">
+                                            <label class="form-label" for="Type" name="Type">Type<span class="text-danger">*</span></label>
+                                            <select class="form-control">
+                                                <option>option 1</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 ">
+                                        <div class="form-group">
+                                            <label class="form-label" for="Branch" name="Branch">Branch<span class="text-danger">*</span></label>
+                                            <select class="form-control">
+                                                <option>option 1</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 ">
+                                        <div class="form-group">
+                                            <label class="form-label" for="Religion" name="Religion">Religion<span class="text-danger">*</span></label>
+                                            <select class="form-control">
+                                                <option>option 1</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="row">
+
+                                    <div class="col-md-4 ">
+                                        <div class="form-group">
+                                            <label class="form-label" for="MaritalStatus" name="MaritalStatus">Marital Status<span class="text-danger">*</span></label>
+                                            <select class="form-control">
+                                                <option>option 1</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 ">
+                                        <div class="form-group">
+                                            <label class="form-label" for="Occupation" name="Occupation">Occupation<span class="text-danger">*</span></label>
+                                            <select class="form-control">
+                                                <option>option 1</option>
+                                            </select>
+                                        </div>
+                                    </div>                                  
+                                </div>
+
+
+                                <!-- /.card-body -->
+
+                            </form>
+                            <form id="quickForm" novalidate="novalidate">
+                                <div class="card-body">
+
+                                    <div class="card card-secondary">
+                                        <div class="card-header">
+                                            <div class="card-title">
+                                                <i class="fas fa-edit fa-xs"></i> Birth Information
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="form-label">DOB</label>
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+                                                            </div>
+                                                            <input type="text" id="RegDateTime" class="form-control" data-inputmask-alias="datetime" data-inputmask-inputformat="mm/dd/yyyy" data-mask="" im-insert="false">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 ">
+                                                    <div class="form-group">
+                                                        <label for="RegNo">Year</label>
+                                                        <input type="text" name="Year" class="form-control" id="Year" placeholder="Enter Year">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 ">
+                                                    <div class="form-group">
+                                                        <label for="RegNo">Month</label>
+                                                        <input type="text" name="Month" class="form-control" id="Month" placeholder="Enter Month">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 ">
+                                                    <div class="form-group">
+                                                        <label for="RegNo">Day</label>
+                                                        <input type="text" name="Day" class="form-control" id="Day" placeholder="Enter Day">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="row ">
+                                                <div class="col-md-4 ">
+                                                    <div class="form-group">
+                                                        <label class="form-label" for="Nationality" name="Nationality">Nationality<span class="text-danger">*</span></label>
+                                                        <select class="form-control">
+                                                            <option>option 1</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 ">
+                                                    <div class="form-group">
+                                                        <label class="form-label" for="Gender" name="Gender">Gender<span class="text-danger">*</span></label>
+                                                        <select class="form-control">
+                                                            <option>option 1</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 ">
+                                                    <div class="form-group">
+                                                        <label class="form-label" for="PlaceOfBirth" name="PlaceOfBirth">Place Of Birth<span class="text-danger">*</span></label>
+                                                        <select class="form-control">
+                                                            <option>option 1</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <!-- /.card-body -->
+
+                            </form>
+                            <form id="quickForm" novalidate="novalidate">
+                                <div class="card-body">
+
+                                    <div class="card card-secondary">
+                                        <div class="card-header">
+                                            <div class="card-title">
+                                                <i class="fas fa-edit fa-xs"></i> Contact Information
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <div class="form-group ">
+                                                        <label class="form-label" for="RequisitionCategoryID" name="RequisitionCategoryID">Mobile No<span class="text-danger">*</span></label>                                                   
+                                                        <input type="text" name="MobileNumber" class="form-control" id="MobileNumber" placeholder="Number">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-4">
+                                                    <div class="form-group ">
+                                                        <label class="form-label" for="RequisitionCategoryID" name="RequisitionCategoryID">Residence Number<span class="text-danger">*</span></label>                                                      
+                                                        <input type="text" name="ResidenceNumber" class="form-control" id="ResidenceNumber" placeholder="Number">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-4">
+                                                    <div class="form-group ">
+                                                        <label class="form-label" for="RequisitionCategoryID" name="RequisitionCategoryID">Other Number<span class="text-danger">*</span></label>                                                   
+                                                        <input type="text" name="OtherNumber" class="form-control" id="OtherNumber" placeholder="Number">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="row ">
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Nic No</label>
+                                                        <input type="text" class="form-control input-group" placeholder="Enter Nic No" required="" id="NicNo" />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                   
+                                </div>
+                                <!-- /.card-body -->
+
+                            </form>
+                            <form id="quickForm" novalidate="novalidate">
+                                <div class="card-body">
+
+                                    <div class="card card-secondary">
+                                        <div class="card-header">
+                                            <div class="card-title">
+                                                <i class="fas fa-edit fa-xs"></i> Next Of Kin Information
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Name</label>
+                                                        <input type="text" class="form-control input-group" placeholder="Enter Complete Name" required="" id="KinName" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label class="form-label">CNIC</label>
+                                                        <input type="text" class="form-control input-group" placeholder="Enter Complete CNIC" required="" id="KinCnic" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label class="form-label" for="KinRelationShip" name="KinRelationShip">RelationShip<span class="text-danger">*</span></label>
+                                                        <select class="form-control">
+                                                            <option>option 1</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <div class="form-group ">
+                                                        <label class="form-label" for="RequisitionCategoryID" name="RequisitionCategoryID">Mobile No<span class="text-danger">*</span></label>                                                   
+                                                        <input type="text" name="KinNumber" class="form-control" id="KinNumber" placeholder="Number">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-4">
+                                                    <div class="form-group ">
+                                                        <label class="form-label" for="RequisitionCategoryID" name="RequisitionCategoryID">Other Number<span class="text-danger">*</span></label>
+                                                        <input type="text" name="OtherKinNumber" class="form-control" id="OtherKinNumber" placeholder="Number">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-4 ">
+                                                    <div class=" form-group  hidden" id="divOtherRemarks">
+                                                        <label class="form-label">Kin Address<span class="text-danger">*</span></label>
+                                                        <textarea class="form-control" id="KinAddress" name="KinAddress"></textarea>
+                                                        <div class="invalid-feedback">
+                                                            Address Required.
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <!-- /.card-body -->
+
+                            </form>
+                        </div>
+
+                    </div>
+                    <!-- /.card -->
+                </div>
+                <!--/.col (left) -->
+                <!-- right column -->            
+                <!--/.col (right) -->
+            </div>
+            <!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- /.content -->
+  
+    <!-- /.content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- left column -->
+                <div class="col-md-12">
+                    <!-- jquery validation -->
+                    <div class="card card-primary">
+                        <div class="card-header">
+                            <h3 class="card-title">For Medical Record Use Only </h3>
+                        </div>
+                        <!-- /.card-header -->
+                        <!-- form start -->
+                        <form id="quickForm" novalidate="novalidate">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-4 ">
+                                        <div class="form-group">
+                                            <label class="form-label" for="File Status" name="File Status">File Status<span class="text-danger">*</span></label>
+                                            <select class="form-control">
+                                                <option>option 1</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 ">
+                                        <div class="form-group">
+                                            <label class="form-label">Last Visit On</label>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+                                                </div>
+                                                <input type="text" id="RegDateTime" class="form-control" data-inputmask-alias="datetime" data-inputmask-inputformat="mm/dd/yyyy" data-mask="" im-insert="false">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 ">
+                                        <div class="form-group">
+                                            <label class="form-label" for="ScanStatus" name="ScanStatus">Scan Status<span class="text-danger">*</span></label>
+                                            <select class="form-control">
+                                                <option>option 1</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="form-label">Status Date</label>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+                                                </div>
+                                                <input type="text" id="RegDateTime" class="form-control" data-inputmask-alias="datetime" data-inputmask-inputformat="mm/dd/yyyy" data-mask="" im-insert="false">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+
+                                    <div class="col-md-4 ">
+                                        <div class="form-group">
+                                            <label class="form-label" for="BarCodeNo" name="BarCodeNo">Bar Code No<span class="text-danger">*</span></label>
+                                            <select class="form-control">
+                                                <option>option 1</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 ">
+                                        <div class="form-group">
+                                            <label class="form-label">Scan Date Time</label>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+                                                </div>
+                                                <input type="text" id="RegDateTime" class="form-control" data-inputmask-alias="datetime" data-inputmask-inputformat="mm/dd/yyyy" data-mask="" im-insert="false">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-4 ">
+                                        <div class="form-group">
+                                            <label class="form-label" for="PatientStatus" name="PatientStatus">Patient Status<span class="text-danger">*</span></label>
+                                            <select class="form-control">
+                                                <option>option 1</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 ">
+                                        <div class="form-group">
+                                            <label class="form-label" for="ScanBy" name="ScanBy">Scan By<span class="text-danger">*</span></label>
+                                            <select class="form-control">
+                                                <option>option 1</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 ">
+                                        <div class=" form-group  hidden" id="divOtherRemarks">
+                                            <label class="form-label">Address<span class="text-danger">*</span></label>
+                                            <textarea class="form-control" id="MRAddress" name="MRAddress"></textarea>
+                                            <div class="invalid-feedback">
+                                                Address Required.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- /.card-body -->
+
+                        </form>
+                    </div>
+                    <!-- /.card -->
+                </div>
+                <!--/.col (left) -->
+                <!-- right column -->
+                <div class="col-md-6">
+
+                </div>
+                <!--/.col (right) -->
+            </div>
+            <!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+</div>
+
+
+
+<script>
+    $(function () {
+        $.validator.setDefaults({
+            submitHandler: function () {
+                alert("Form successful submitted!");
+            }
+        });
+        $('#quickForm').validate({
+            rules: {
+                email: {
+                    required: true,
+                    email: true,
+                },
+                password: {
+                    required: true,
+                    minlength: 5
+                },
+                terms: {
+                    required: true
+                },
+            },
+            messages: {
+                email: {
+                    required: "Please enter a email address",
+                    email: "Please enter a vaild email address"
+                },
+                password: {
+                    required: "Please provide a password",
+                    minlength: "Your password must be at least 5 characters long"
+                },
+                terms: "Please accept our terms"
+            },
+            errorElement: 'span',
+            errorPlacement: function (error, element) {
+                error.addClass('invalid-feedback');
+                element.closest('.form-group').append(error);
+            },
+            highlight: function (element, errorClass, validClass) {
+                $(element).addClass('is-invalid');
+            },
+            unhighlight: function (element, errorClass, validClass) {
+                $(element).removeClass('is-invalid');
+            }
+        });
+    });
+</script>

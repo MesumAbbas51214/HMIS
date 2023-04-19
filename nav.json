@@ -1,0 +1,27 @@
+{
+  "version": "1",
+  "lists": [
+    {
+      "title": "TKC Employee Portal"
+    },
+    {
+      "title": "Dashboard",
+      "text": "Dashboard",
+      "href": "/Home/Index",
+      "icon": "fal fa-home"
+    },
+    {
+      "text": "Patient Registration System",
+      "title": "PRS",
+      "icon": "fal fa-user-chart",
+      "items": [
+        {
+          "title": "Patient Registration",
+          "showOnSeed": true,
+          "href": "/PRS/PatientRegistration"
+        }
+       
+      ]
+    }
+  ]
+}
